@@ -1,0 +1,10 @@
+<h1>home - hardlebars</h1>
+
+<p>Seja bem vindo(a) usuario {{ usuario.nome}}</p>
+<p> tenho certeza que voce um otimo {{usuario.profissao }}, mesmo tendo ainda {{usuario.idade}}.</p>
+
+{{#if auth}}
+   <a href="/dashboard">Acessar a dashboard></a>
+{{else}}
+   <p>Voce ainda não está logado. faça login ou cadatre-se</p>
+{{/if}}
